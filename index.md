@@ -19,7 +19,7 @@ Soy un apasionado a la ciberseguridad, especialmente al pentesting, actualmente 
 
 ## WriteUps 
 
-Write-Ups(./Write-Ups/)
+[Write-Up Nocturnal HTB](./Write-Ups/Nocturnal.md)
 
 #### Header 4
 
