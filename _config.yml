@@ -1,6 +1,6 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
-show_downloads: true
+title: ShadowRooted
+description: Aquí muestro mis logros, write-ups, herramientas, y quizás noticias de ciberseguridad!
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
 url: "https://shadowrooted.github.io"
