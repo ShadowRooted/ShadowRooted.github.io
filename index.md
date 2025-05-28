@@ -2,23 +2,18 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# WHOAMI
 
-[Link to another page](./another-page.html).
+Soy un apasionado a la ciberseguridad, especialmente al pentesting, actualmente estoy estudiando para obtener mi primera certificación.
 
-There should be whitespace between paragraphs.
+## CERTIFICACIONES
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+CONSEGUIDOS
+> SMR
 
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+EN CURSO
+> CPTS (HTB)
+> ASIR (2º)
 
 ### Header 3
 
