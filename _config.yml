@@ -3,4 +3,5 @@ description: Hacker is a theme for GitHub Pages.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
-baseurl: "/ShadowRooted.github.io"
+url: "https://shadowrooted.github.io"
+baseurl: ""
