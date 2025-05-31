@@ -52,12 +52,12 @@ PORT     STATE SERVICE VERSION
 <<SNIP>>
 ```
 Vemos que tiene una versión a priori no vulnerable de ssh y en el puerto 5000 corriendo un servidor web de Werkzeug. Podemos deducirlo por las cabeceras HTTP y por el código html que se ve abajo.
-![[Pasted image 20250531214900.png]]
+<img src="/Imagenes_Write_Ups/HTB/214858.png">
 Nos encontramos esto al meternos a la página web, tenemos un botón `For questions` que si le damos nos redirige a un formulario de contacto en `http://10.129.193.81:5000/support`:
-![[Pasted image 20250531215038.png]]
+<img src="/Imagenes_Write_Ups/HTB/215005.png">
 Podemos intentar una XSS, probaremos en el cuerpo de mensajes:
-![[Pasted image 20250531215202.png]]
-![[Pasted image 20250531215214.png]]
+<img src="/Imagenes_Write_Ups/HTB/215037.png">
+<img src="/Imagenes_Write_Ups/HTB/215202.png">
 No nos sale la alerta que queríamos pero nos muestra que han detectado un ataque y que se enviarán estos datos (las cabeceras de la petición HTTP que realizamos) a los investigadores, lo que huele a ser una XSS ciega, tenemos control de todas las cabeceras, asi que capturaremos la petición con burpsuite.
 
 Una vez en BurpSuite, con la petición, vamos a probar a inyectar código JavaScript en las Cookies:
