@@ -58,6 +58,8 @@ Nos encontramos esto al meternos a la página web, tenemos un botón `For questi
 
 ![headless]({{ "/assets/images/headless2.png"}})
 
+## EXPLOTACIÓN
+
 Podemos intentar una XSS, probaremos en el cuerpo de mensajes:
 
 ![headless]({{ "/assets/images/headless3.png"}})
