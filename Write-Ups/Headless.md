@@ -57,7 +57,7 @@ Nos encontramos esto al meternos a la página web, tenemos un botón `For questi
 <img src="/Imagenes_Write_Ups/HTB/215005.png">
 Podemos intentar una XSS, probaremos en el cuerpo de mensajes:
 <img src="/Imagenes_Write_Ups/HTB/215037.png">
-<img src="/Imagenes_Write_Ups/HTB/215202.png">
+![[headless4.png]]
 No nos sale la alerta que queríamos pero nos muestra que han detectado un ataque y que se enviarán estos datos (las cabeceras de la petición HTTP que realizamos) a los investigadores, lo que huele a ser una XSS ciega, tenemos control de todas las cabeceras, asi que capturaremos la petición con burpsuite.
 
 Una vez en BurpSuite, con la petición, vamos a probar a inyectar código JavaScript en las Cookies:
