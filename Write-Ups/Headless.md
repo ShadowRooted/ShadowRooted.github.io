@@ -52,29 +52,29 @@ PORT     STATE SERVICE VERSION
 <<SNIP>>
 ```
 Vemos que tiene una versión a priori no vulnerable de ssh y en el puerto 5000 corriendo un servidor web de Werkzeug. Podemos deducirlo por las cabeceras HTTP y por el código html que se ve abajo.
-<img src="/Imagenes_Write_Ups/HTB/214858.png">
+![headless]({{ "/assets/images/headless1.png"}})
 Nos encontramos esto al meternos a la página web, tenemos un botón `For questions` que si le damos nos redirige a un formulario de contacto en `http://10.129.193.81:5000/support`:
-<img src="/Imagenes_Write_Ups/HTB/215005.png">
+![headless]({{ "/assets/images/headless2.png"}})
 Podemos intentar una XSS, probaremos en el cuerpo de mensajes:
-<img src="/Imagenes_Write_Ups/HTB/215037.png">
-![XSS]({{ "/assets/images/headless4.png"}})
+![headless]({{ "/assets/images/headless3.png"}})
+![headless]({{ "/assets/images/headless4.png"}})
 No nos sale la alerta que queríamos pero nos muestra que han detectado un ataque y que se enviarán estos datos (las cabeceras de la petición HTTP que realizamos) a los investigadores, lo que huele a ser una XSS ciega, tenemos control de todas las cabeceras, asi que capturaremos la petición con burpsuite.
-
+![headless]({{ "/assets/images/headless5.png"}})
 Una vez en BurpSuite, con la petición, vamos a probar a inyectar código JavaScript en las Cookies:
-![[Pasted image 20250531215724.png]]
+![headless]({{ "/assets/images/headless7.png"}})
 Esto debería de darnos una alerta en el navegador que diga PWNED si las cookies son vulnerables a XSS.
-![[Pasted image 20250531215920.png]]
+![headless]({{ "/assets/images/headless9.png"}})
 En efecto, es vulnerable a XSS.
-![[Pasted image 20250531215942.png]]
+![headless]({{ "/assets/images/headless10.png"}})
 Podemos ver como en las cookies la `ShadowRooted_XSS` no se muestra, ya que es el código JavaScript, si le damos a inspeccionar podemos ver que pasa en esa parte:
-![[Pasted image 20250531220114.png]]
+![headless]({{ "/assets/images/headless11.png"}})
 Bien, sabiendo que es vulnerable y que la cookie se guarda como `is_admin` nos abriremos un puerto web con Python y usaremos un payload que nos envíe la cookie del administrador.
 ```bash
 $ python3 -m http.server 8000
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 Ahora, capturamos la petición de nuevo y añadimos en la cabecera de las cookies un payload que nos envíe la cookie del administrador que verá esta página.
-![[Pasted image 20250531220845.png]]
+![headless]({{ "/assets/images/headless13.png"}})
 A la espera de unos segundos recibimos la cookie:
 ```bash
 10.129.193.81 - - [31/May/2025 15:09:47] "GET /admin_cookie?=is_admin=ImFkbWluIg.dmzDkZNEm6CK0oyL1fbM-SnXpH0 HTTP/1.1" 404 -
@@ -89,23 +89,23 @@ support                 [Status: 200, Size: 2363, Words: 836, Lines: 93, Duratio
 dashboard               [Status: 500, Size: 265, Words: 33, Lines: 6, Duration: 41ms]
 ```
 Encontramos el directorio `dashboard`, con código 500, vamos a intentar acceder:
-![[Pasted image 20250531221506.png]]
+![headless]({{ "/assets/images/headless15.png"}})
 Recibimos que el servidor no pudo verificar si estamos autorizados para acceder al recurso. Bien, en las dev tools, en almacenamiento y en cookie, sustituimos la de `is_admin` por la obtenida del administrador y recargamos:
-![[Pasted image 20250531221630.png]]
+![headless]({{ "/assets/images/headless16.png"}})
 Una vez recargamos podemos acceder y vemos una opción para generar reportes de la página el cual pongamos la fecha que pongamos siempre nos devuelve `Systems are up and running!`:
-![[Pasted image 20250531221746.png]]
+![headless]({{ "/assets/images/headless18.png"}})
 Capturamos la petición con Burpsuite y la enviamos al repeater:
-![[Pasted image 20250531223819.png]]
+![headless]({{ "/assets/images/headless19.png"}})
 Vemos que envía el parámetro `date` el cual pongas lo que pongas, sea una fecha válida o no sea ni una fecha, nos dice lo mismo. Aquí podríamos probar una inyección de comandos en el parámetro `date`, lo probamos con un `|` para así en caso de existir la vulnerabilidad que nos muestre únicamente la salida de nuestro comando.
-![[Pasted image 20250531224111.png]]
-![[Pasted image 20250531224125.png]]
+![headless]({{ "/assets/images/headless20.png"}})
+![headless]({{ "/assets/images/headless21.png"}})
 Vemos que la respuesta del servidor es el nombre del usuario que ejecuta el servidor web, por lo que sí, hay una vulnerabilidad que nos permite inyectar comandos, bien, nos pondremos a escucha en el puerto 4444 con `nc` y nos enviaremos una reverse shell:
 ```bash
 $ nc -lvnp 4444
 listening on [any] 4444 ...
 ```
 Con el siguiente payload deberíamos recibir una reverse shell:
-![[Pasted image 20250531224648.png]]
+![headless]({{ "/assets/images/headless24.png"}})
 ```bash
 $ nc -lvnp 4444
 listening on [any] 4444 ...
