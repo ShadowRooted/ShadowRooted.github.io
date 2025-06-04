@@ -2,7 +2,7 @@
 layout: default
 title: Headless
 ---
-#HEADLESS HTB
+# Headless HTB
 ## ENUMERACIÓN
 Primero comprobamos que hay conexión con el equipo.
 ```bash

@@ -2,7 +2,7 @@
 layout: default
 title: Bashed
 ---
-#Bashed HTB
+# Bashed HTB
 ## ENUMERACIÓN
 
 Confirmamos con el comando ping si tenemos conexión con la máquina, mandando a esta peticiones ICMP echo.
