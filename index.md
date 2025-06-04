@@ -23,3 +23,5 @@ Soy un apasionado a la ciberseguridad, especialmente al pentesting, actualmente 
 >[Nocturnal](./Write-Ups/Nocturnal.md)
 >
 >[Headless](./Write-Ups/Headless.md)
+>
+>[Bashed](./Write-Ups/Bashed.md)
