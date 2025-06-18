@@ -275,7 +275,7 @@ $ python3 pswm-decrypt.py -f pswm -w rockyou.txt
 
 Podemos ver cómo la herramienta ha conseguido la contraseña, es **flower** para desencriptarla, y la de abajo es la contraseña del usuario, intentemos conectarnos vía ssh con el usuario **aleks** y la contraseña conseguida:
 
-```` bash
+```bash
 $ ssh aleks@10.129.180.121
 The authenticity of host '10.129.180.121 (10.129.180.121)' can't be established.
 ED25519 key fingerprint is SHA256:uq3+WwrPajXEUJC3CCuYMMlFTVM8CGYqMtGB9mI29wg.
