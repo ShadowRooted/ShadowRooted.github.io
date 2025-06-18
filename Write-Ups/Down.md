@@ -55,6 +55,8 @@ Nmap done: 1 IP address (1 host up) scanned in 6.91 seconds
 
 A priori no parecen ser versiones vulnerables a un CVE que nos interese, veamos de qué trata el servidor web.
 
+## EXPLOTACIÓN
+
 ![Down]({{ "/assets/images/Down1.png"}})
 
 No encontramos un servidor que nos solicita una entrada, una URL para ser más concretos, y nos va a decir si el sitio está activo o no.
@@ -162,6 +164,8 @@ $ stty -echo raw;fg
 ```
 
 Deberíamos estar en la máquina víctima con una shell completamente interactiva.
+
+## ESCALADA DE PRIVILEGIOS
 
 Ahora listemos el contenido del directorio actual:
 
