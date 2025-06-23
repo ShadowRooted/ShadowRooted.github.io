@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ShadowRooted | Mi blog
+title: Mi blog
 ---
 
 # WHOAMI
