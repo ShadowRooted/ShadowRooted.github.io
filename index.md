@@ -19,7 +19,7 @@ Además, estoy formándome en pentesting, soy bastante autodidacta y me gusta ba
 
 Aquí iré subiendo los Write-Ups de las máquinas que resuelva una vez estén retiradas:
 
-![Write_Ups](./Write-Ups/index.md)
+![Write-Ups](./Write-Ups/index.md)
 
 ## RUTA DE OBJETIVOS
 
