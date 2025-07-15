@@ -3,4 +3,4 @@ layout: default
 title: Nocturnal | Easy Machine
 ---
 
-## Enumeración
+# PENDIENTE DE QUE SE RETIRE LA MÁQUINA PARA SUBIRLO!

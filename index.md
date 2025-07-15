@@ -5,25 +5,30 @@ title: Mi blog
 
 # WHOAMI
 
-Soy un apasionado a la ciberseguridad, especialmente al pentesting, actualmente estoy estudiando para obtener mi primera certificación.
+Buenas! Soy ShadowRooted, o así quiero que me conozcan en este mundo ;).
 
-## CERTIFICACIONES
+Soy estudiante del Ciclo Formativo de Grado Superior ASIR (Administración de sistemas informáticos en red), el cual estoy en 2º año.
 
-**CONSEGUIDOS**
-> SMR
+Tengo completado y en posesión el título de Grado Medio de SMR (Sistemas microinformáticos en red).
 
-**EN CURSO**
-> CPTS (HTB)
->
-> ASIR (2º)
+Dispongo de experiencia como técnico de sistemas.
 
-### WriteUps HTB
+Además, estoy formándome en pentesting, soy bastante autodidacta y me gusta bastante aprender sobre las nuevas tecnologías que van saliendo :D
 
-*Máquina Easy*
->[Nocturnal](./Write-Ups/Nocturnal.md)
->
->[Headless](./Write-Ups/Headless.md)
->
->[Bashed](./Write-Ups/Bashed.md)
->
->[Down](./Write-Ups/Down.md)
+
+## RUTA DE OBJETIVOS
+
+![objetivos_personales]({{ "/assets/images/ruta_objetivos.png"}})
+
+## Redes sociales
+
+Para asentar mejor los conocimientos e incluso formar una comunidad voy a publicar videos resolviendo máquinas, cuyos vídeos se encontrarán enlazados en el Write-Up escrito para quien prefiera verlo en vídeo, donde explicaré más a fondo y será todo más guiable.
+
+También, haré directos en Twitch resolviendo máquinas, retos, montando laboratorios, etc. 
+
+Avisaré de los directos en Twitter!
+
+[YouTube](https://www.youtube.com/@ShadowRooted)
+[Twitter](https://x.com/ShadowRooted)
+[Twitch](https://www.twitch.tv/shadowrooted)
+[Linked1n](linkedin.com/in/daniel-estévez-montero-a24355281)
