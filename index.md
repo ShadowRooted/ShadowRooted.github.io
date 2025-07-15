@@ -15,6 +15,11 @@ Dispongo de experiencia como técnico de sistemas.
 
 Además, estoy formándome en pentesting, soy bastante autodidacta y me gusta bastante aprender sobre las nuevas tecnologías que van saliendo :D
 
+## Write-Ups
+
+Aquí iré subiendo los Write-Ups de las máquinas que resuelva una vez estén retiradas:
+
+![Write_Ups](./Write-Ups/index.md)
 
 ## RUTA DE OBJETIVOS
 
@@ -32,3 +37,4 @@ Avisaré de los directos en Twitter!
 [Twitter](https://x.com/ShadowRooted)
 [Twitch](https://www.twitch.tv/shadowrooted)
 [Linked1n](linkedin.com/in/daniel-estévez-montero-a24355281)
+
