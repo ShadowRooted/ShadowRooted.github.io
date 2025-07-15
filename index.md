@@ -36,5 +36,5 @@ Avisaré de los directos en Twitter!
 [YouTube](https://www.youtube.com/@ShadowRooted)
 [Twitter](https://x.com/ShadowRooted)
 [Twitch](https://www.twitch.tv/shadowrooted)
-[Linked1n](linkedin.com/in/daniel-estévez-montero-a24355281)
+[Linked1n](https://linkedin.com/in/daniel-estévez-montero-a24355281)
 
