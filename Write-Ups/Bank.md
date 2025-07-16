@@ -218,4 +218,4 @@ Ya seríamos root y habríamos acabado con la máquina Bank! La flag de root se 
 
 # VIDEO WRITE-UP
 
-<iframe width="100%" height="400" src="https://youtu.be/eLu7QrAzQu0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://youtu.be/eLu7QrAzQu0?si=L9pQE1w3omu5ZDCP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
