@@ -13,3 +13,5 @@ title: Write-Ups
 >[Bank](./Bank.md)
 >
 >[Nocturnal](./Nocturnal.md)
+>
+>[Forge](./Forge.md)
