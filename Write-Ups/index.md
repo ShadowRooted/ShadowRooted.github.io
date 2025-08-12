@@ -4,6 +4,9 @@ title: Write-Ups
 ---
 
 # Write-Ups HTB
+
+## Easy
+
 >[Headless](./Headless.md)
 >
 >[Bashed](./Bashed.md)
@@ -14,4 +17,9 @@ title: Write-Ups
 >
 >[Nocturnal](./Nocturnal.md)
 >
+>[Alert](./Alert.md)
+
+## Medium
+
 >[Forge](./Forge.md)
+
