@@ -1,7 +1,8 @@
 title: ShadowRooted
-description: Aquí muestro mis logros, write-ups, herramientas, y quizás noticias de ciberseguridad!
+description: APASIONADO AL HACKING
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
 url: "https://shadowrooted.github.io"
 baseurl: ""
+show_github: false
