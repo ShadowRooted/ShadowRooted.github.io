@@ -5,10 +5,15 @@ title: Nocturnal | Easy Machine
 
 # Conocimientos necesarios para completar la máquina
 > Nmap
+>
 > Enumeración de directorios
+>
 > IDOR
+>
 > RCE
+>
 > Proxies Web
+>
 > Local Port Forwarding
 
 ## Enumeración Inicial
@@ -97,6 +102,8 @@ Vemos que nos aparece un error con los formatos de archivo que nos permite subir
 Podemos ver que un pdf se sube correctamente. Si vemos el código fuente, o bien hacemos click en el archivo capturando la petición con **burpsuite** o analizando la petición realizada con las **dev tools** podremos ver a dónde hace referencia el enlace del archivo subido, en este caso, veremos el código fuente:
 
 ![nocturnal]({{"/assets/images/nocturnal7.png"}})
+
+## EXPLOTACIÓN
 
 Podemos ver cómo hace referencia a **view.php?username=shadowrooted&file=shadow.pdf**, bien, intentemos navegar a esta URL pero poniendo un nombre de un archivo no existente:
 
@@ -329,10 +336,6 @@ drwxr-xr-x 2 root root 4096 Apr 14 09:11 scripts
 Podemos leer la flag del usuario root, y ya tendríamos la máquina completamente pwned!
 
 KEEP HACKING!
-
-# VIDEO RÁPIDO
-
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/zkt6wyOQPSQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # WALKTHROUGH COMPLETO
 
