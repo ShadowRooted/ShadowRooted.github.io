@@ -339,4 +339,8 @@ KEEP HACKING!
 
 # WALKTHROUGH COMPLETO
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/K5CPW5vnAq8" frameborder="0" allow="accelerometer; autoplay; clip>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/K5CPW5vnAq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+# VIDEO RÁPIDO
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/zkt6wyOQPSQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
