@@ -245,6 +245,6 @@ Esta explotación se debe a que **systemd** no tiene configurada la variable **L
 
 Keep hacking!
 
-## Vídeo pendiente de publicar
+## Vídeo Walkthrough
 
-
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/VrlwAxNBx48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
