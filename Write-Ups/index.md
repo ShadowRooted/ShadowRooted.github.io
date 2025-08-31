@@ -20,6 +20,8 @@ title: Write-Ups
 >[Alert](./Alert.md)
 >
 >[Sau](./Sau.md)
+>
+>[Editor](./Editor.md)
 ## Medium
 
 >[Forge](./Forge.md)
