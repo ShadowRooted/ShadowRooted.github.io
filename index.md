@@ -33,6 +33,6 @@ Aquí, junto a mi canal de [YouTube](https://www.youtube.com/@ShadowRooted) publ
 
 [YouTube](https://www.youtube.com/@ShadowRooted)
 [Twitter](https://x.com/ShadowRooted)
-[Twitch](https://www.twitch.tv/shadowrooted)
+[Twitch](https://www.twitch.tv/shadowrooter)
 [Linked1n](https://linkedin.com/in/daniel-estévez-montero-a24355281)
 
